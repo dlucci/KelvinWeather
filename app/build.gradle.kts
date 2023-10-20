@@ -8,11 +8,11 @@ android {
     compileSdk = 33
 
     defaultConfig {
-//        applicationId = "com.dlucci.kelvinweather"
+        applicationId = "com.dlucci.kelvinweather"
         minSdk = 28
         targetSdk = 33
-//        versionCode = 1
-//        versionName = "1.0"
+        versionCode = 1
+        versionName = "1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         vectorDrawables {
@@ -42,14 +42,12 @@ android {
         kotlinCompilerExtensionVersion = "1.4.3"
     }
 
-    /**
-     * Commenting out until we update AGP to 8.1.1
-     */
-//    packaging {
-//        resources {
-//            excludes += "/META-INF/{AL2.0,LGPL2.1}"
-//        }
-//    }
+
+    packaging {
+        resources {
+            excludes += "/META-INF/{AL2.0,LGPL2.1}"
+        }
+    }
 }
 
 dependencies {
