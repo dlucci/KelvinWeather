@@ -15,3 +15,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "KelvinWeather"
 include(":app")
+include(":home")
